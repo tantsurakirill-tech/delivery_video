@@ -7,10 +7,6 @@ tracking_code = input("Выберите посылку для внесения �
 field = int(input("Выберите поле для изменения(Имя - 1, Вес - 2): "))
 value = input("Введите новое значение: ")
 
-FIELDS = {
-        "1": "recipient",
-        "2": "weight_kg"
-    }
 
 with Session() as session:
 
