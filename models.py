@@ -10,6 +10,11 @@ class Base(DeclarativeBase):
 class Parcel(Base):
     __tablename__ = 'parcels'
 
+    FIELDS = {
+        1: "recipient",
+        2: "weight_kg"
+    }
+
     # __table_args__ = {
     #     'schema': 'parcels'
     # } Если схема не публичная
